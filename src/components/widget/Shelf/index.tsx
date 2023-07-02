@@ -1,11 +1,13 @@
 import { Product } from '@/components/widget/Product'
 import { Container } from './styles'
+import { IProduct } from '@/types/IProduct'
 
 interface ShelfProps{
-  shelfList: any[]
+  shelfList: IProduct[]
 }
 
 export const Shelf:React.FC<ShelfProps> = ({shelfList}: ShelfProps) => {
+  console.log(">>>>>>",shelfList)
   return (
 
     <Container>
