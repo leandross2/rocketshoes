@@ -18,6 +18,7 @@ export const Image = styled.img`
 `
 
 export const Title = styled(TextStyle)`
+  margin-top: auto;
   color: #333;
   margin-bottom: 4px;
 `
