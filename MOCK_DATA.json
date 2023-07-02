@@ -1,10 +1,51 @@
-[{"id":1,"title":"tenis","price":380.79,"image":"http://dummyimage.com/260x260.png/dddddd/000000"},
-{"id":2,"title":"tenis massa","price":211.32,"image":"http://dummyimage.com/260x260.png/cc0000/ffffff"},
-{"id":3,"title":"de caminhada","price":117.0,"image":"http://dummyimage.com/260x260.png/dddddd/000000"},
-{"id":4,"title":"tenis massa","price":310.84,"image":"http://dummyimage.com/260x260.png/cc0000/ffffff"},
-{"id":5,"title":"tenis de corrida","price":267.47,"image":"http://dummyimage.com/260x260.png/dddddd/000000"},
-{"id":6,"title":"de caminhada","price":541.7,"image":"http://dummyimage.com/260x260.png/5fa2dd/ffffff"},
-{"id":7,"title":"tenis","price":445.32,"image":"http://dummyimage.com/260x260.png/dddddd/000000"},
-{"id":8,"title":"de caminhada","price":311.17,"image":"http://dummyimage.com/260x260.png/5fa2dd/ffffff"},
-{"id":9,"title":"de caminhada","price":555.81,"image":"http://dummyimage.com/260x260.png/dddddd/000000"},
-{"id":10,"title":"tenis","price":375.9,"image":"http://dummyimage.com/260x260.png/ff4444/ffffff"}]
+[{
+  "id": 1,
+  "title": "tênis massa",
+  "price": 453.86,
+  "image": "http://dummyimage.com/215x100.png/5fa2dd/ffffff"
+}, {
+  "id": 2,
+  "title": "tênis massa",
+  "price": 340.02,
+  "image": "http://dummyimage.com/133x100.png/dddddd/000000"
+}, {
+  "id": 3,
+  "title": "tênis de corrida",
+  "price": 179.12,
+  "image": "http://dummyimage.com/209x100.png/cc0000/ffffff"
+}, {
+  "id": 4,
+  "title": "tênis de corrida",
+  "price": 352.99,
+  "image": "http://dummyimage.com/219x100.png/ff4444/ffffff"
+}, {
+  "id": 5,
+  "title": "tênis massa",
+  "price": 386.01,
+  "image": "http://dummyimage.com/161x100.png/5fa2dd/ffffff"
+}, {
+  "id": 6,
+  "title": "tênis massa",
+  "price": 578.41,
+  "image": "http://dummyimage.com/142x100.png/ff4444/ffffff"
+}, {
+  "id": 7,
+  "title": "tênis de caminhada",
+  "price": 170.39,
+  "image": "http://dummyimage.com/194x100.png/5fa2dd/ffffff"
+}, {
+  "id": 8,
+  "title": "tênis de corrida",
+  "price": 448.61,
+  "image": "http://dummyimage.com/243x100.png/5fa2dd/ffffff"
+}, {
+  "id": 9,
+  "title": "tênis massa",
+  "price": 512.65,
+  "image": "http://dummyimage.com/205x100.png/5fa2dd/ffffff"
+}, {
+  "id": 10,
+  "title": "tênis massa",
+  "price": 276.22,
+  "image": "http://dummyimage.com/157x100.png/cc0000/ffffff"
+}]
