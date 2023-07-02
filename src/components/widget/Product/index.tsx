@@ -3,7 +3,7 @@ import { Container, Image, Price, Title } from './styles'
 import { IProduct } from '@/types/IProduct'
 
 interface ProductProps extends IProduct{}
-export const Product:React.FC<ProductProps> = ({id,image,title,price}) => {
+export const Product:React.FC<ProductProps> = ({image,title,price}) => {
   return (
     <Container>
       <Image src={image} alt={title} />

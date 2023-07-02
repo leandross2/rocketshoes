@@ -12,6 +12,7 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   max-width: 260px;
+  max-height: 260px;
   margin: 0 auto 16px;
   border-radius:4px;
 `
