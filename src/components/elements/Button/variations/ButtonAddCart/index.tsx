@@ -10,7 +10,7 @@ interface ButtonAddCartProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export const ButtonAddCart: React.FC<ButtonAddCartProps> = ({ productId, onClick, ...rest }) => {
   const { cart, item } = useCart(productId)
 
-  const handleOnCLick = useCallback((event) => {
+  const handleOnCLick = useCallback((event: any) => {
     if (onClick != null)onClick(event)
   }, [cart])
 
