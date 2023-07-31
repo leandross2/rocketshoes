@@ -6,8 +6,6 @@ export const Container = styled(Button)`
   border: 0 none;
   background: #7159C1;
   display: flex;
-
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   color: #FFF;

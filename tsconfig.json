@@ -20,7 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@services/*": ["./src/core/services/*"],
+      "@contexts/*": ["./src/core/contexts/*"],
     }
   },
   "include": ["src"],

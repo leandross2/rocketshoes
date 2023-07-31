@@ -1,18 +1,16 @@
-import { ReactNode } from 'react'
 import { Container } from './styles'
 
-interface TextProps{
-  children: string;
-  size?:  'small'| 'normal' | 'big'
+interface TextProps {
+  children: string
+  size?: 'small' | 'normal' | 'big'
   weight?: 'regular' | 'bold'
   align?: 'left' | 'center' | 'right'
 }
 
-export const Text:React.FC<TextProps> = ({children, size, weight, align}) => {
+export const Text: React.FC<TextProps> = ({ children, size, weight, align }) => {
   return (
     <Container size={size} weight={weight} align={align}>
       {children}
     </Container>
   )
 }
-

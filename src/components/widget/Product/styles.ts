@@ -1,29 +1,21 @@
 import styled from 'styled-components'
+import { metrics } from '@/styles/metrics'
 import { Container as TextStyle } from '@/components/elements/Text/styles'
 
-export const Container = styled.div`
-  background-color: #FFF;
-  /* max-width: 300px; */
-  padding: 20px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-`
-
 export const Image = styled.img`
-  max-width: 260px;
-  max-height: 260px;
-  margin: 0 auto 16px;
-  border-radius:4px;
+  border-radius:  ${metrics.borderRadius.b4};
+  height: 16.25rem;
+  margin: 0 auto ${metrics.space.s16};
+  width: 16.25rem;
 `
 
 export const Title = styled(TextStyle)`
   margin-top: auto;
   color: #333;
-  margin-bottom: 4px;
+  margin-bottom: ${metrics.space.s12};
 `
 
 export const Price = styled(TextStyle)`
   color: #000;
-  margin-bottom: 8px;
-  `
+  margin-bottom: ${metrics.space.s16};
+`

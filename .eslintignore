@@ -1,3 +1,4 @@
-.eslintrc.json
-*.js
-node_modules
+.eslintrc.cjs
+vite.config.ts
+tsconfig.node.json
+vite-env.d.ts

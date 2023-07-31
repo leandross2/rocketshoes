@@ -1,19 +1,22 @@
-import Logo from '@/assets/Logo.png'
-import { CartArea, Container, InfoCart, MainLogo, Label, LabelQuantity } from './styles'
+import { CartArea, Container, InfoCart, Label, LabelQuantity } from './styles'
 import { ShoppingCart } from '@phosphor-icons/react'
+import { useCart } from '@/core/hooks/useCart'
+import { Logo } from '@/components/elements/Logo'
 
-export const Header:React.FC = () => {
+export const Header: React.FC = () => {
+  const { cart } = useCart()
+
   return (
     <Container>
-      <MainLogo src={Logo} alt="RocketShoes" />
+
+      <Logo />
       <CartArea>
         <InfoCart>
           <Label weight='bold'>Meu carrinho</Label>
-          <LabelQuantity>3 itens</LabelQuantity>
+          <LabelQuantity>{cart.itens?.length || 0} itens</LabelQuantity>
         </InfoCart>
         <ShoppingCart size={36}/>
       </CartArea>
    </Container>
   )
 }
-

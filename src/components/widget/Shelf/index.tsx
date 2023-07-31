@@ -1,22 +1,20 @@
 import { Product } from '@/components/widget/Product'
 import { Container } from './styles'
-import { IProduct } from '@/types/IProduct'
+import { type IProduct } from '@/types/IProduct'
+import { Card } from '@/components/elements/Card'
 
-interface ShelfProps{
+interface ShelfProps {
   shelfList: IProduct[]
 }
 
-export const Shelf:React.FC<ShelfProps> = ({shelfList}: ShelfProps) => {
-  console.log(">>>>>>",shelfList)
+export const Shelf: React.FC<ShelfProps> = ({ shelfList }: ShelfProps) => {
   return (
-
-    <Container>
-      {shelfList.map((product)=>(
-        <Product key={2} {...product}/>
-      ))}
-    </Container>
+    !!shelfList.length
+      ? <Container>
+        {shelfList.map((product) => (
+          <Product key={product.id} {...product}/>
+        ))}
+        </Container>
+      : <Card align='center'>Nenhum Produto Encontrado</Card>
   )
-  
-  
 }
-

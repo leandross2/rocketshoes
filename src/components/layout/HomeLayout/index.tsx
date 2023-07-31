@@ -1,21 +1,26 @@
 import { Header } from '@/components/widget/Header'
 import { Shelf } from '@/components/widget/Shelf'
 import { Container } from './styles'
-import { IProduct } from '@/types/IProduct'
+import { type IProduct } from '@/types/IProduct'
+import { Card } from '@/components/elements/Card'
 
-interface HomeLayourProps{
+interface HomeLayourProps {
   productList: IProduct[]
+  isError: string
 }
-export const HomeLayout:React.FC<HomeLayourProps> = ({productList}) => {
+export const HomeLayout: React.FC<HomeLayourProps> = ({ productList, isError }) => {
   return (
     <>
       <Header/>
 
       <Container>
-        <Shelf shelfList={productList} />
+        {
+          !isError
+            ? <Shelf shelfList={productList} />
+            : <Card align='center'><p>{isError}</p></Card>
+          }
       </Container>
     </>
 
   )
 }
-
