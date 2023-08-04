@@ -1,4 +1,4 @@
-import { Container, Badge as BadgeIcon, BadgeText } from './styles'
+import { Badge as BadgeIcon, BadgeText, Container } from './styles'
 import { IconProps } from '@phosphor-icons/react'
 
 interface BadgeProps extends IconProps {

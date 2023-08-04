@@ -1,5 +1,5 @@
-import {createGlobalStyle} from 'styled-components'
-
+import { createGlobalStyle } from 'styled-components'
+import { metrics } from './metrics'
 
 export const GlobalStyle = createGlobalStyle`
   *{
@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: #191920;
+    background-color: ${metrics.colors.darkgray};
   }
 
   body, input, textarea, button{

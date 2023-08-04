@@ -1,5 +1,6 @@
-import { styled } from "styled-components";
+import { metrics } from '@/styles/metrics'
+import { styled } from 'styled-components'
 
 export const Container = styled.main`
-  padding: 16px;
+  padding: ${metrics.space.s16};
 `

@@ -5,6 +5,16 @@
   "customSyntax": "postcss-styled-syntax",
   "rules": {
     "no-empty-source": null,
-    "order/properties-alphabetical-order": true
+    "order/properties-alphabetical-order": true,
+    "no-invalid-position-at-import-rule": "off",
+    "plugin/no-unresolved-module": {
+			"alias": {
+        "@/*": "./src/*",
+        "@components/*": "./src/components/*",
+        "@services/*": "./src/core/services/*",
+        "@contexts/*": "./src/core/contexts/*",
+        "@hooks/*": "./src/core/hooks/*"
+			}
+		}
   }
 }

@@ -1,7 +1,7 @@
 import { ShoppingCart } from '@phosphor-icons/react'
 import { Container, IconContainer, Quantity, Text } from './styles'
 import { type ButtonHTMLAttributes, useCallback } from 'react'
-import { useCart } from '@/core/hooks/useCart'
+import { useCart } from '@hooks/useCart'
 
 interface ButtonAddCartProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   productId: number
@@ -9,9 +9,8 @@ interface ButtonAddCartProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const ButtonAddCart: React.FC<ButtonAddCartProps> = ({ productId, onClick, ...rest }) => {
   const { cart, item } = useCart(productId)
-
   const handleOnCLick = useCallback((event: any) => {
-    if (onClick != null)onClick(event)
+    if (onClick != null) onClick(event)
   }, [cart])
 
   return (

@@ -10,7 +10,7 @@ module.exports = {
       },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
     ],
     "overrides": [
         {
@@ -40,11 +40,13 @@ module.exports = {
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
+        "no-extra-boolean-cast": "off",
         "@typescript-eslint/consistent-type-assertions": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/no-confusing-void-expression": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
-        "no-extra-boolean-cast": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/consistent-type-imports": "off"
 
     }

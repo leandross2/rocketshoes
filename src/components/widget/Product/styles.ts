@@ -1,6 +1,8 @@
 import styled from 'styled-components'
-import { metrics } from '@/styles/metrics'
 import { Container as TextStyle } from '@/components/elements/Text/styles'
+import { metrics } from '@/styles/metrics'
+import { ButtonAddCart as ButtonAddCartDefault } from '@/components/elements/Button/variations/ButtonAddCart'
+import { limitLine } from '@/styles/mixins'
 
 export const Image = styled.img`
   border-radius:  ${metrics.borderRadius.b4};
@@ -10,12 +12,16 @@ export const Image = styled.img`
 `
 
 export const Title = styled(TextStyle)`
-  margin-top: auto;
-  color: #333;
+  color: ${metrics.colors.gray};
   margin-bottom: ${metrics.space.s12};
-`
+  overflow: hidden;
+  ${limitLine('2.3rem')}
+  `
 
 export const Price = styled(TextStyle)`
-  color: #000;
+  color: ${metrics.colors.black};
   margin-bottom: ${metrics.space.s16};
+  margin-top: auto;
+`
+export const ButtonAddCart = styled(ButtonAddCartDefault)`
 `

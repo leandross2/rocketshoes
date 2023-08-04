@@ -2,7 +2,7 @@ import { Container } from './styles'
 
 interface TextProps {
   children: string
-  size?: 'small' | 'normal' | 'big'
+  size?: 'small' | 'regular' | 'large'
   weight?: 'regular' | 'bold'
   align?: 'left' | 'center' | 'right'
 }

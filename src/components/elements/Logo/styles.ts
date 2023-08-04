@@ -5,7 +5,7 @@ import { ReactComponent as LogoSneckerSVG } from '@/assets/logo/noun_Running_147
 export const Container = styled.div``
 export const LogoText = styled(LogoTextSVG)``
 export const LogoSnecker = styled(LogoSneckerSVG)`
-  margin-left: 15px;
+  margin-left: ${metrics.space.s15};
 
 
 `

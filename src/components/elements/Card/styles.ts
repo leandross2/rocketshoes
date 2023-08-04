@@ -9,7 +9,7 @@ interface ContainerProps {
 const fullContent = (full?: boolean) => {
   if (full) {
     return css`
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
     `
   }
@@ -43,7 +43,7 @@ const borderOnHover = () => {
         top: -10px;
         left: -10px;
         z-index: -1;
-        border-radius: 4px;
+        border-radius: ${metrics.borderRadius.b4};
         animation: 8s ${animation} linear infinite;
       }
     }`

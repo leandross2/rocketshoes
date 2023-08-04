@@ -2,3 +2,4 @@
 vite.config.ts
 tsconfig.node.json
 vite-env.d.ts
+/dist

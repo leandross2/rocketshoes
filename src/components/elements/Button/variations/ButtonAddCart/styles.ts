@@ -1,29 +1,30 @@
 import styled from 'styled-components'
-import {Container as Button} from '@/components/elements/Button/styles'
-import { Container as TextStyles } from '@/components/elements/Text/styles';
+import { Container as Button } from '@/components/elements/Button/styles'
+import { Container as TextStyles } from '@/components/elements/Text/styles'
+import { metrics } from '@/styles/metrics'
 
 export const Container = styled(Button)`
   border: 0 none;
-  background: #7159C1;
+  background:${metrics.colors.lightPurple};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFF;
+  color: ${metrics.colors.white};
   font-weight: 600;
   border-radius: 4px;
-`;
+`
 
 export const IconContainer = styled.div`
-  background: #5a479a;
-  height: 42px;
+  background: ${metrics.colors.purple};
+  height: ${metrics.space.s42};
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: ${metrics.space.s10};
   border-radius: 4px 0 0 4px;
 `
 
 export const Quantity = styled(TextStyles)`
-  margin-left: 4px
+  margin-left: ${metrics.space.s4};
 `
 export const Text = styled(TextStyles)`
   flex: 1

@@ -1,57 +1,58 @@
+import { metrics } from '@/styles/metrics'
 import styled from 'styled-components'
 
-interface TextProps{
-  size?: 'small'| 'normal' | 'big'
+interface TextProps {
+  size?: 'small' | 'regular' | 'large'
   weight?: 'regular' | 'bold'
   align?: 'left' | 'center' | 'right'
 }
 
-const setFontSize = ({size}:TextProps)=> {
-  switch(size){
+const setFontSize = ({ size }: TextProps) => {
+  switch (size) {
     case 'small':{
-      return "font-size: 14px";
+      return `font-size: ${metrics.font.size.small}`
     }
-    case 'normal':{
-      return "font-size: 16px";
+    case 'regular':{
+      return `font-size: ${metrics.font.size.regular}`
     }
-    case 'big':{
-      return "font-size: 21px";
+    case 'large':{
+      return `font-size: ${metrics.font.size.large}`
     }
     default:{
-      return "font-size: 16px";
+      return `font-size: ${metrics.font.size.regular}`
     }
   }
 }
 
-const setFontWeight = ({weight}:TextProps)=> {
-  switch(weight){
+const setFontWeight = ({ weight }: TextProps) => {
+  switch (weight) {
     case 'regular':{
-      return "font-weight: 400";
+      return `font-weight: ${metrics.font.weight.regular}`
     }
     case 'bold':{
-      return "font-weight: 600";
+      return `font-weight: ${metrics.font.weight.bold}`
     }
     default:{
-      return "font-weight: 400";
+      return `font-weight: ${metrics.font.weight.regular}`
     }
   }
 }
-const setAlign = ({align}:TextProps)=> {
-  switch(align){
+const setAlign = ({ align }: TextProps) => {
+  switch (align) {
     case 'left':{
-      return "justify-content: flex-start";
+      return 'justify-content: flex-start'
     }
     case 'center':{
-      return "justify-content: center";
+      return 'justify-content: center'
     }
     default:{
-      return "justify-content: flex-start";
+      return 'justify-content: flex-start'
     }
   }
 }
 
 export const Container = styled.p<TextProps>`
-  ${(props)=>(setFontSize(props))};
-  ${(props)=>(setFontWeight(props))};
-  ${(props)=>(setAlign(props))};
+  ${(props) => (setFontSize(props))};
+  ${(props) => (setFontWeight(props))};
+  ${(props) => (setAlign(props))};
 `
