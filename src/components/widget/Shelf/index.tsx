@@ -1,8 +1,7 @@
 import { Product } from '@/components/widget/Product'
 import { Container } from './styles'
 import { IProduct } from '@/types/IProduct'
-
-import { Loading } from '@/components/elements/Loading'
+import { ProductSkeleton } from '../Product/ProductSkeleton'
 
 interface ShelfProps {
   shelfList: IProduct[]
@@ -11,13 +10,14 @@ interface ShelfProps {
 
 export const Shelf: React.FC<ShelfProps> = ({ shelfList, isLoading }: ShelfProps) => {
   return (
-    !isLoading && !!shelfList.length
-      ? <Container>
-        {shelfList.map((product) => (
-          <Product key={product.id} {...product}/>
-        ))}
+    <Container>
+        {
+        !isLoading && !!shelfList.length
+          ? shelfList.map((product) => (
+            <Product key={product.id} {...product}/>
+          ))
+          : <ProductSkeleton repeat={3}/>
+      }
         </Container>
-
-      : <Loading/>
   )
 }

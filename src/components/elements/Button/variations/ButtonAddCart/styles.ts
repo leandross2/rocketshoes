@@ -11,7 +11,7 @@ export const Container = styled(Button)`
   align-items: center;
   color: ${metrics.colors.white};
   font-weight: 600;
-  border-radius: 4px;
+  border-radius: ${metrics.borderRadius.b4};
 `
 
 export const IconContainer = styled.div`
@@ -20,7 +20,7 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   padding: ${metrics.space.s10};
-  border-radius: 4px 0 0 4px;
+  border-radius: ${metrics.borderRadius.b4} 0 0 ${metrics.borderRadius.b4};
 `
 
 export const Quantity = styled(TextStyles)`
