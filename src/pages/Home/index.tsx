@@ -4,7 +4,7 @@ import { HomePageProvider } from '@/core/contexts/HomePageContext'
 export const Home: React.FC = () => {
   return (
     <HomePageProvider>
-    <HomeLayout />
+      <HomeLayout />
     </HomePageProvider>
   )
 }
